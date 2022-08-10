@@ -5,7 +5,5 @@
 $url = $block->getJsUrl();
 $render = $block->getRender();
 //echo $render->renderTag('script',['type'=>'text/javascript','src'=>$escaper->escapeUrl($url),'defer'=>'defer'],"\n",true);
-echo "qui";
-echo $url;
-echo $render->renderTag('script',['type'=>'text/javascript','data-suppressedsrc'=>$escaper->escapeUrl($url),'defer'=>'defer','data-iub-purposes'=>'4'],"\n",true);
+echo $render->renderTag('script',['type'=>'text/plain','data-suppressedsrc'=>$escaper->escapeUrl($url),'defer'=>'defer','data-iub-purposes'=>'4'],"\n",true);
 ?>
